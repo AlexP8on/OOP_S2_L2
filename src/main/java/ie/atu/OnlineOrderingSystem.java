@@ -7,7 +7,10 @@ public class OnlineOrderingSystem {
  MenuItem[] menuItems = new MenuItem[]{
          new Burger("Chicken Royal", 8.99, "Chicken, Cheese, Tomato Lettuce, Saucy sauce"),
          new Pizza("The meat man ", 100.00, "Sour dough base, Tomato & Basil, Cheese, Grade A Wagyu steak"),
-         new Salad("No Beef ", 2.00, "Lettuce, Tomato, Lettuce and More Lettuce")
+         new Salad("No Beef ", 2.00, "Lettuce, Tomato, Lettuce and More Lettuce"),
+         new Dessert("Tmassoo ", 6.00, "Cream, Coffee, sponge")
+
+
 
  };
 
