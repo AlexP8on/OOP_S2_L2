@@ -4,16 +4,22 @@ package ie.atu;
 // then press Enter. You can now see whitespace characters in your code.
 public class OnlineOrderingSystem {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+ MenuItem[] menuItems = new MenuItem[]{
+         new Burger("Chicken Royal", 8.99, "Chicken, Cheese, Tomato Lettuce, Saucy sauce"),
+         new Pizza("The meat man ", 100.00, "Sour dough base, Tomato & Basil, Cheese, Grade A Wagyu steak"),
+         new Salad("No Beef ", 2.00, "Lettuce, Tomato, Lettuce and More Lettuce")
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+ };
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+ for (MenuItem menuItem: menuItems){
+     System.out.println("Name: "+menuItem.getName());
+     System.out.println("Description: "+ menuItem.getDescription());
+     System.out.println("Price:$ "+menuItem.getPrice() + "\n");
+ }
+ double totalcost = 0;
+ for(MenuItem menuItem: menuItems) {
+     totalcost += menuItem.getPrice();
+ }
+        System.out.println("Total cost: " + totalcost );
     }
 }
